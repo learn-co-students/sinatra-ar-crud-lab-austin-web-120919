@@ -1,0 +1,17 @@
+<h2>Enter stuff to change</h2>
+<%= @article.title%>
+<%= @article.content%>
+
+<form method="POST" action='/articles/<%= @article.id %>'>
+    <input id="hidden" type="hidden" name="_method" value="patch">
+    <input type="text" ...>
+    <p>
+        Enter new title: <input type="text" name="title">
+        <br>
+        Enter new content: <input type='text' name='content'>
+      
+
+        <input type='submit' value='Submit'>
+    </p>
+   
+</form>
